@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+    <project name="ImageReader" default="run" basedir="." > 
+    <property name="src" value="src"/>
+    <property name="aux" value="src/aux"/>
+    <property name="dest" value="classes"/> 
+    <property name="lib.dir" value="lib"/>
+
+    <path id="classpath">
+        <fileset dir="lib" includes="*.jar"/>
+    </path>
+
+    <target name="junit">
+        <available property="junit.present" classname="junit.framework.TestCase" />
+    </target>
+            
+    <target name="init" depends="junit">
+        <delete dir="${dest}"/> 
+        <mkdir dir="${dest}"/> 
+    </target>
+
+    <target name="aux" depends="init">
+        <echo>"Compiling the auxiliary class"</echo> 
+        <javac srcdir="${aux}" destdir="${dest}" includeantruntime="on">
+            <classpath>
+                 <fileset dir="${lib.dir}" includes="*.jar"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="compile" depends="aux"> 
+        <javac srcdir="${src}" destdir="${dest}" includeantruntime="on">
+            <classpath>
+                 <fileset dir="${lib.dir}" includes="*.jar"/>
+            </classpath>
+        </javac>
+    </target>
+
+
+    <target name="run" depends="compile"> 
+        <java classname="ImageReaderRunner" classpath="${dest}" fork="true">
+            <classpath>
+                 <fileset dir="${lib.dir}" includes="*.jar"/>
+            </classpath>
+        </java> 
+    </target>
+            
+    <target name="test" depends="compile">
+        <junit printsummary="yes" fork="yes">
+            <formatter type="plain"/>
+            <classpath path="${dest}"/>
+            <classpath refid="classpath"/>
+            <test name="ImageReaderTest"/>
+        </junit>
+    </target>
+         
+</project>

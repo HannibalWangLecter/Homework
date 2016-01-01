@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1448681200 source:d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\main.cpp
+	"CExpression.h"
+	"CCaller.h"
+	<iostream>
+
+1432181923 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cexpression.h
+	"CUtils.h"
+	<deque>
+	<stack>
+
+1448681774 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cutils.h
+	<stdio.h>
+	<map>
+	<string>
+	<string.h>
+	"CCaculator.h"
+
+1432181923 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\ccaculator.h
+
+1432181923 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\ccaller.h
+	"CVMState.h"
+	"CUtils.h"
+	<assert.h>
+	<map>
+
+1432181923 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cvmstate.h
+	<map>
+	"CStack.h"
+	"CRandom.h"
+	"CCaculator.h"
+
+1432181923 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cstack.h
+	"CMacro.h"
+
+1448681925 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cmacro.h
+	<string.h>
+	<stdlib.h>
+
+1432181923 d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\crandom.h
+	<time.h>
+
+1432181923 source:d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\ccaculator.cpp
+	"CCaculator.h"
+	<assert.h>
+	<math.h>
+
+1432181923 source:d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\ccaller.cpp
+	"CCaller.h"
+	"CUtils.h"
+
+1448680983 source:d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cexpression.cpp
+	"CExpression.h"
+	"CCaller.h"
+	<stack>
+	<assert.h>
+
+1432181923 source:d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cstack.cpp
+	"CStack.h"
+	<assert.h>
+	<string.h>
+
+1432181923 source:d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cutils.cpp
+	"CUtils.h"
+	<stdlib.h>
+	<algorithm>
+	<assert.h>
+
+1448682265 source:d:\githubcode\homework\数据结构实验\6（截止日期11月29前）\sexpression1\sexpression\cvmstate.cpp
+	"CVMState.h"
+	<assert.h>
+	<string.h>
+

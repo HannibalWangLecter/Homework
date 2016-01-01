@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SExpression" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SExpression" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SExpression" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="CCaculator.cpp" />
+		<Unit filename="CCaculator.h" />
+		<Unit filename="CCaller.cpp" />
+		<Unit filename="CCaller.h" />
+		<Unit filename="CExpression.cpp" />
+		<Unit filename="CExpression.h" />
+		<Unit filename="CMacro.h" />
+		<Unit filename="CRandom.h" />
+		<Unit filename="CStack.cpp" />
+		<Unit filename="CStack.h" />
+		<Unit filename="CUtils.cpp" />
+		<Unit filename="CUtils.h" />
+		<Unit filename="CVMState.cpp" />
+		<Unit filename="CVMState.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

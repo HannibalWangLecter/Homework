@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1449760681 source:d:\githubcode\homework\数据结构实验\8提交截止日期12月11号\实验8\bittree\bittree testapp.cpp
+	"BitTree.h"
+
+1448377331 d:\githubcode\homework\数据结构实验\8提交截止日期12月11号\实验8\bittree\bittree.h
+	<stdio.h>
+	<malloc.h>
+
+1448377809 source:d:\githubcode\homework\数据结构实验\8提交截止日期12月11号\实验8\bittree\bittree.cpp
+	"BitTree.h"
+

@@ -1,0 +1,15 @@
+Testsuite: ImageReaderTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.593 sec
+------------- Standard Output ---------------
+File reading, writing, catch exception, #2
+Random test pixels, width,#1 547
+Random test pixels, height,#2 182
+
+File reading, writing, catch exception, #1
+Random test pixels, width,#1 323
+Random test pixels, height,#2 26
+
+------------- ---------------- ---------------
+
+Testcase: testGray took 0.473 sec
+Testcase: testBlue took 0.111 sec

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+    <project name="Jumper" default="test" basedir="." > 
+    <property name="src" value="src"/> 
+    <property name="dest" value="classes"/> 
+    <property name="lib.dir" value="lib"/>
+
+    <path id="classpath">
+        <fileset dir="lib" includes="junit.jar hamcrest-core-1.3.jar gridworld.jar" />
+    </path>
+
+    <target name="junit">
+        <available property="junit.present" classname="junit.framework.TestCase" />
+    </target>
+            
+    <target name="init" depends="junit">
+        <delete dir="${dest}"/> 
+        <mkdir dir="${dest}"/> 
+    </target>
+
+
+    <target name="compile" depends="init"> 
+        <javac srcdir="${src}" destdir="${dest}" includeantruntime="on">
+            <classpath>
+                 <fileset dir="${lib.dir}" includes="*.jar"/>
+            </classpath>
+        </javac>
+    </target>
+
+
+    <target name="run" depends="compile"> 
+        <java classname="JumperRunner" classpath="${dest}" fork="true">
+            <classpath>
+                 <fileset dir="${lib.dir}" includes="*.jar"/>
+            </classpath>
+        </java> 
+    </target>
+            
+    <target name="test" depends="compile">
+        <junit printsummary="yes" fork="yes">
+            <formatter type="plain"/>
+            <classpath path="${dest}"/>
+            <classpath refid="classpath"/>
+            <test name="JumperTest"/>
+        </junit>
+    </target>
+         
+</project>

@@ -1,0 +1,5 @@
+1.Default to run Junit test, cmd:
+  ant 
+
+2. run JumperRunner cmd:
+  ant run
